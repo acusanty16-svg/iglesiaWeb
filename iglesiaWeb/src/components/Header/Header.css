@@ -1,0 +1,56 @@
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(10px);
+  background: rgba(245, 212, 212, 0.22);
+  border-bottom: 1px solid orangered;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  gap: 17px;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 75px;
+  border-radius: 14px;
+  background: rgba(255, 0, 0, 0.22);
+  border: 0.5px solid rgba(255, 5, 5, 0.22);
+}
+.brand-text h1 {
+  margin: 0;
+  font-weight: 500;
+}
+.brand-text p {
+  margin: 0;
+  font-weight: 350;
+  letter-spacing: 0.5px;
+  color: rgb(109, 101, 101);
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  font-size: 17px;
+  color: rgb(109, 101, 101);
+}
+.nav a {
+  border-radius: 999px;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.nav a:hover {
+  border-color: rgba(0, 0, 0, 0.2);
+  color: black;
+  background-color: rgba(255, 0, 0, 0.22);
+}
