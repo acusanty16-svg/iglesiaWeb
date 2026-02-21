@@ -13,8 +13,8 @@ const Header = () => {
   </div>
 
   <nav class="nav">
-    <a href="#productos">Familia</a>
-    <a href="#proceso">Creencias</a>
+    <a href="#familia">Familia</a>
+    <a href="#creencias">Creencias</a>
     <a href="#contacto">Contacto</a>
   </nav>
 </header>

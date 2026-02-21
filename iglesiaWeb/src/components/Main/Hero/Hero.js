@@ -1,5 +1,5 @@
 import "./Hero.css";
-
+import HeroCarruselFotos from "../../imagesCarrusel/Images";
 const Hero = () => {
   return `
     <section class="hero">
@@ -10,42 +10,25 @@ const Hero = () => {
     <p>
       Somos una iglesia trinitaria con deseo de seguir a Cristo.
     </p>
-
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="#productos">Ver catálogo</a>
-      <a class="btn btn-ghost" href="#contacto">Pedir por WhatsApp</a>
+    <div class="image-hero">
+    ${HeroCarruselFotos()}
     </div>
 
-    <div class="badge">
-      <span class="badge-dot"></span>
-      <span>Envío 24/48h · Península</span>
-    </div>
   </div>
 
 
   <div class="hero-right">
-
-    <article class="hero-card">
       <div class="hero-card-top">
-        <p class="tag">TOP VENTAS</p>
-        <h3>Pack Degustación</h3>
-        <p class="muted">4 sabores · 800g</p>
+        <p class="tag">Nuestras reuniones</p>
+        <h3>Domingo 10:30am</h3>
+        <h3>Miércoles 08.30pm</h3>
       </div>
 
-      <div class="hero-card-price">
-        <span class="price">16,90€</span>
-        <span class="mini muted">IVA incl.</span>
-      </div>
-
-      <button class="btn btn-secondary">
-        Añadir al carrito
-      </button>
-
-      <div class="shine"></div>
-    </article>
-
-    <div class="floating-sausage">🌭</div>
-
+      <div class="hero-actions">
+      <a class="btn btn-primary" href="#familia">Conoce a nuestra familia</a>
+      <a class="btn btn-ghost" href="#contacto">¿Quieres ser parte?</a>
+    </div>
+    
   </div>
 
 </section>

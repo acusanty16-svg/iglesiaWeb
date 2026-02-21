@@ -1,14 +1,26 @@
+:root {
+  --background-color: #29262e;
+  --background-topbar: rgba(41, 38, 46, 0.4);
+  --principal-font-color: #fafbfb;
+  --secondary-font-color: #b6b2b2;
+  --accent-color-1: rgba(213, 80, 94, 0.35);
+  --accent-color-2: #fafbfb;
+  --spacing: 20px;
+  --shadow: 0 7px 15px rgba(0, 0, 0, 0.35);
+}
+
 .topbar {
   position: sticky;
   top: 0;
   z-index: 20;
   backdrop-filter: blur(10px);
-  background: rgba(245, 212, 212, 0.22);
-  border-bottom: 1px solid orangered;
-  padding: 14px;
+  background: var(--background-topbar);
+  border-bottom: var(--accent-color-2) 1px solid;
+  padding: var(--spacing);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: var(--principal-font-color);
 }
 
 .brand {
@@ -22,8 +34,9 @@
   width: 50px;
   height: 75px;
   border-radius: 14px;
-  background: rgba(255, 0, 0, 0.22);
-  border: 0.5px solid rgba(255, 5, 5, 0.22);
+  background: var(--accent-color-1);
+  border: 0.25px solid var(--accent-color-2);
+  box-shadow: var(--shadow);
 }
 .brand-text h1 {
   margin: 0;
@@ -33,14 +46,14 @@
   margin: 0;
   font-weight: 350;
   letter-spacing: 0.5px;
-  color: rgb(109, 101, 101);
+  color: var(--secondary-font-color);
 }
 
 .nav {
   display: flex;
   gap: 10px;
   font-size: 17px;
-  color: rgb(109, 101, 101);
+  color: var(--secondary-font-color);
 }
 .nav a {
   border-radius: 999px;
@@ -50,7 +63,19 @@
   transition: all 0.3s ease;
 }
 .nav a:hover {
-  border-color: rgba(0, 0, 0, 0.2);
-  color: black;
-  background-color: rgba(255, 0, 0, 0.22);
+  border-color: var(--accent-color-2) 1px;
+  color: var(--principal-font-color);
+  background-color: var(--accent-color-1);
+}
+
+@keyframes brigth {
+  0% {
+    box-shadow: 0 0 0 rgba(255, 27, 19, 0.46);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 27, 19, 0.46);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(255, 27, 19, 0.46);
+  }
 }
