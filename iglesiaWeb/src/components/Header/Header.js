@@ -8,7 +8,7 @@ const Header = () => {
 
     <div class="brand-text">
       <h1>ICAF</h1>
-      <p>Iglesia comprometida en amar a los demas.</p>
+      <p>Iglesia Cristiana Amor Fraternal.</p>
     </div>
   </div>
 

@@ -5,7 +5,7 @@ const Hero = () => {
     <section class="hero">
 
   <div class="hero-left">
-    <h2>Iglesia Cristiana Amor Fraternal</h2>
+    <h2>Conoce quienes somos</h2>
 
     <p>
       Somos una iglesia trinitaria con deseo de seguir a Cristo.

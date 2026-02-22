@@ -21,6 +21,7 @@ a {
   color: inherit;
 }
 body {
+  background: var(--background-color);
   background:
     radial-gradient(
       1200px 700px at 20% 30%,

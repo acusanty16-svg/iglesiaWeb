@@ -1,0 +1,22 @@
+:root {
+  --background-color: #29262e;
+  --background-topbar: rgba(41, 38, 46, 0.4);
+  --principal-font-color: #fafbfb;
+  --secondary-font-color: #b6b2b2;
+  --accent-color-1: rgba(213, 80, 94, 0.35);
+  --accent-color-2: #fafbfb;
+  --spacing: 20px;
+  --shadow: 0 7px 15px rgba(0, 0, 0, 0.35);
+}
+
+.familia h1 {
+  text-align: center;
+  letter-spacing: 50px;
+  font-weight: 800;
+  margin: 300px;
+  color: var(--accent-color-2);
+}
+.familia-contenedor {
+  display: grid;
+  grid-template-columns: 0.3fr 1.7fr;
+}

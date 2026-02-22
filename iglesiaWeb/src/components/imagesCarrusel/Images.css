@@ -2,7 +2,7 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-  max-width: 600px;
+  max-width: 850px;
   margin: 0 auto;
 }
 .carrusel-track:hover {
@@ -10,7 +10,7 @@
 }
 .carrusel-track {
   display: flex;
-  width: max-content;
+  max-width: max-content;
   animation: carruselImages 15s linear infinite;
 }
 .carrusel-item {
@@ -33,5 +33,11 @@
   }
   to {
     transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1000px) {
+  .carrusel {
+    max-width: 450px;
   }
 }
