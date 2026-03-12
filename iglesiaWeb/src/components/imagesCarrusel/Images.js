@@ -11,9 +11,9 @@ const fotos = [
 const HeroCarruselFotos = () => {
   const contenidoFotos = fotos
     .map(
-      (foto) => `
+      (foto, index) => `
         <div class="carrusel-item">
-            <img src="/images/${foto}" alt="Foto iglesia">
+            <img src="/images/${foto}" alt="Imagen ${index + 1} de la iglesia" loading="lazy">
         </div>
         `,
     )

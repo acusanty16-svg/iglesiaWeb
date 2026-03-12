@@ -1,4 +1,4 @@
-.carrusel {
+﻿.carrusel {
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -26,7 +26,6 @@
   margin: 10px;
   padding: 10px;
 }
-
 @keyframes carruselImages {
   from {
     transform: translateX(0);
@@ -35,7 +34,14 @@
     transform: translateX(-50%);
   }
 }
-
+@media (prefers-reduced-motion: reduce) {
+  .carrusel-track {
+    animation: none;
+  }
+  .carrusel-track:hover {
+    animation-play-state: none;
+  }
+}
 @media (max-width: 1000px) {
   .carrusel {
     max-width: 450px;

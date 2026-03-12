@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&family=Oswald:wght@200..700&display=swap");
 
 :root {
+  color-scheme: dark;
+}
+*:focus-visible {
+  outline: 2px solid var(--accent-color-1);
+  outline-offset: 2px;
+}
+
+:root {
   --background-color: #1e2323;
   --font-color: #fafbfb;
   --accent-color-1: #d5505e;

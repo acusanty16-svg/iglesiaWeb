@@ -2,8 +2,8 @@ import "./Familia.css";
 
 const Familia = () => {
   return `
-    <section class="familia">
-        <h1>FAMILIA</h1>
+    <section class="familia" id="familia">
+        <h2>FAMILIA</h2>
         <div class="familia-contenedor">
             <div class="familia-izquierdo">
             <h3>Nuestra obra social</h3>
@@ -11,11 +11,11 @@ const Familia = () => {
             </div>
             <div class="familia-derecho">
                 <div class="familia-item">
-                    <img src="../../public/images/obraSocial" alt="Foto obra social">
-                 </div>
-                 <div class="familia-item">
-                    <img src="../../public/images/obraSocial1" alt="Foto obra social">
-                 </div>
+                    <img src="/images/obraSocial.jpg" alt="Obra social de la iglesia">
+                  </div>
+                  <div class="familia-item">
+                    <img src="/images/obrasocial2.jpg" alt="Actividades sociales de la iglesia">
+                  </div>
             </div>
         </div>
 

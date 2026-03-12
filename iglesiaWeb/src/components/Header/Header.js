@@ -2,9 +2,9 @@ import "./Header.css";
 
 const Header = () => {
   return `
-    <header class="topbar">
+    <header class="topbar" role="banner">
   <div class="brand">
-    <span class="logo">⛪</span>
+    <span class="logo" aria-hidden="true">⛪</span>
 
     <div class="brand-text">
       <h1>ICAF</h1>
