@@ -4,7 +4,7 @@ const Header = () => {
   return `
     <header class="topbar" role="banner">
   <div class="brand">
-    <span class="logo" aria-hidden="true">⛪</span>
+    <img class="logo" src="/images/logo.svg" alt="ICAF" width="50" height="60">
 
     <div class="brand-text">
       <h1>ICAF</h1>

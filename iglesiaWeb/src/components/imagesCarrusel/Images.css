@@ -46,4 +46,23 @@
   .carrusel {
     max-width: 450px;
   }
+  .carrusel-item {
+    height: 350px;
+  }
+  .carrusel-item img {
+    height: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .carrusel {
+    max-width: 100%;
+  }
+  .carrusel-item {
+    height: 280px;
+  }
+  .carrusel-item img {
+    height: 200px;
+    margin: 6px;
+    padding: 6px;
+  }
 }

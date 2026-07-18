@@ -1,22 +1,129 @@
-:root {
-  --background-color: #29262e;
-  --background-topbar: rgba(41, 38, 46, 0.4);
-  --principal-font-color: #fafbfb;
-  --secondary-font-color: #b6b2b2;
-  --accent-color-1: rgba(213, 80, 94, 0.35);
-  --accent-color-2: #fafbfb;
-  --spacing: 20px;
-  --shadow: 0 7px 15px rgba(0, 0, 0, 0.35);
+.familia {
+  padding: 60px 20px;
+  scroll-margin-top: 80px;
 }
 
-.familia h1 {
+.familia-verso {
   text-align: center;
-  letter-spacing: 50px;
-  font-weight: 800;
-  margin: 300px;
-  color: var(--accent-color-2);
+  max-width: 700px;
+  margin: 0 auto 50px;
+  padding: 30px 24px;
+  background: rgba(9, 9, 9, 0.3);
+  border-radius: 16px;
+  border: 1px solid rgba(250, 251, 251, 0.08);
+  box-shadow: var(--shadow);
 }
-.familia-contenedor {
+
+.familia-verso-texto {
+  color: var(--font-color);
+  font-size: 1.15rem;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.familia-verso-cita {
+  color: var(--accent-color-1);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.familia-titulo {
+  text-align: center;
+  letter-spacing: 16px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--accent-color-2);
+  margin-bottom: 6px;
+}
+
+.familia-subtitulo {
+  text-align: center;
+  color: var(--secondary-font-color);
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+}
+
+.familia-grid {
   display: grid;
-  grid-template-columns: 0.3fr 1.7fr;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.familia-card {
+  background: rgba(9, 9, 9, 0.3);
+  border: 1px solid rgba(250, 251, 251, 0.08);
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.familia-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent-color-1);
+  box-shadow: 0 12px 30px rgba(213, 80, 94, 0.15);
+}
+
+.familia-card-icono {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 18px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent-color-1);
+  color: var(--font-color);
+}
+
+.familia-card-nombre {
+  color: var(--font-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.familia-card-desc {
+  color: var(--secondary-font-color);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .familia {
+    padding: 40px 16px;
+  }
+
+  .familia-verso {
+    padding: 24px 18px;
+    margin-bottom: 36px;
+  }
+
+  .familia-verso-texto {
+    font-size: 1rem;
+  }
+
+  .familia-titulo {
+    letter-spacing: 8px;
+    font-size: 1.3rem;
+  }
+
+  .familia-subtitulo {
+    font-size: 0.85rem;
+    margin-bottom: 28px;
+  }
+
+  .familia-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .familia-card {
+    padding: 24px 18px;
+  }
 }

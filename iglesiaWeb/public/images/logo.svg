@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" fill="none">
+  <path d="M40 10 H60 V45 H95 V65 H60 V110 H40 V65 H5 V45 H40 V10Z"
+        fill="#fafbfb"
+        stroke="rgba(213,80,94,0.5)"
+        stroke-width="2"/>
+</svg>
