@@ -5,7 +5,7 @@ import Footer from "./components/Footer/Footer";
 
 function initNavActive() {
   const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll(".nav a");
+  const navLinks = document.querySelectorAll(".nav a[href^='#']");
 
   function updateActiveLink() {
     let current = "";

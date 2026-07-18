@@ -1,0 +1,85 @@
+.topbar-a {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(10px);
+  background: rgba(41, 38, 46, 0.4);
+  border-bottom: #fafbfb 1px solid;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fafbfb;
+}
+
+.brand-a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-a {
+  width: 44px;
+  height: 52px;
+  border-radius: 10px;
+  padding: 6px;
+  background: rgba(213, 80, 94, 0.35);
+  border: 0.5px solid #fafbfb;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.35);
+  object-fit: contain;
+}
+
+.brand-text-a h1 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.brand-text-a p {
+  margin: 0;
+  font-weight: 350;
+  letter-spacing: 0.5px;
+  font-size: 0.8rem;
+  color: #b6b2b2;
+}
+
+.back-link {
+  color: #b6b2b2;
+  text-decoration: none;
+  font-size: 0.88rem;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(213, 80, 94, 0.35);
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  background: rgba(213, 80, 94, 0.35);
+  color: #fafbfb;
+}
+
+@media (max-width: 768px) {
+  .topbar-a {
+    padding: 10px 16px;
+  }
+
+  .logo-a {
+    width: 38px;
+    height: 44px;
+    padding: 5px;
+  }
+
+  .brand-text-a h1 {
+    font-size: 1.1rem;
+  }
+
+  .brand-text-a p {
+    font-size: 0.72rem;
+  }
+
+  .back-link {
+    font-size: 0.82rem;
+    padding: 6px 12px;
+  }
+}

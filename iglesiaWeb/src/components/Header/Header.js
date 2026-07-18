@@ -16,6 +16,7 @@ const Header = () => {
     <a href="#familia">Familia</a>
     <a href="#creencias">Creencias</a>
     <a href="#contacto">Contacto</a>
+    <a href="/alabanza.html">Alabanza</a>
   </nav>
 </header>
     
