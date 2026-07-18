@@ -46,13 +46,20 @@
 
 .footer-links a {
   color: var(--secondary-font-color);
-  text-decoration: none;
-  font-size: 0.88rem;
-  transition: color 0.3s ease;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 251, 251, 0.12);
+  transition: all 0.3s ease;
 }
 
 .footer-links a:hover {
   color: var(--font-color);
+  background: var(--accent-color-1);
+  border-color: var(--accent-color-1);
+  transform: translateY(-2px);
 }
 
 .footer-verse {

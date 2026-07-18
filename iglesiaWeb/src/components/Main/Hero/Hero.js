@@ -21,6 +21,7 @@ const Hero = () => {
       <div class="hero-card-top">
         <p class="tag">Nuestras reuniones</p>
         <h3>Domingo 10:30am</h3>
+        <h3>Domingo 12:00am</h3>
         <h3>Miércoles 08.30pm</h3>
       </div>
 
